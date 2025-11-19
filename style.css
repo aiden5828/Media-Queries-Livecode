@@ -61,6 +61,23 @@ body {
   height: 100vh;
 }
 
+/* Phone size, < 500px */
+@media screen and (500px > width) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+  "red    blue"
+  "green yellow"
+  "violet black";
+  }
+  #orange {
+display: none;
+  }
+  #indigo {
+display: none;
+  }
+}
+
 /* tablet size */
 @media screen and (500px < width < 700px) {
   #indigo {
